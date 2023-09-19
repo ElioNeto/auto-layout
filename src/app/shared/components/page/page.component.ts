@@ -9,7 +9,5 @@ export class PageComponent implements OnInit {
   @Input() page: any;
 
   constructor() {}
-  ngOnInit(): void {
-    console.log(this.page);
-  }
+  ngOnInit(): void {}
 }

@@ -11,10 +11,23 @@ export class CoreComponent implements OnInit {
       {
         title: "Linguagens de Programação",
         id: "page001",
-      },
-      {
-        title: "Aprenda inglês",
-        id: "page002",
+        sections: [
+          {
+            id: "section001",
+            title: "Linguagens Core",
+            description: null,
+          },
+          {
+            id: "section002",
+            title: "Linguagens Cola",
+            description: null,
+          },
+          {
+            id: "section003",
+            title: "Frameworks e Libs",
+            description: null,
+          },
+        ],
       },
     ],
   };

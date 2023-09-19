@@ -1,6 +1,2 @@
-<h2>Minha seção</h2>
-<h3>Esta seção refere-se ao nosso exemplo</h3>
-<app-orchestrator></app-orchestrator>
-<app-orchestrator></app-orchestrator>
-<app-orchestrator></app-orchestrator>
-<app-orchestrator></app-orchestrator>
+<h2>{{ section.title }}</h2>
+<h3 *ngIf="section.subtitle">{{ section.subtitle }}</h3>
