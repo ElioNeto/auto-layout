@@ -12,6 +12,10 @@ export class CoreComponent implements OnInit {
         title: "Linguagens de Programação",
         id: "page001",
       },
+      {
+        title: "Aprenda inglês",
+        id: "page002",
+      },
     ],
   };
 
