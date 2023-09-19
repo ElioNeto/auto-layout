@@ -6,7 +6,15 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./core.component.css"],
 })
 export class CoreComponent implements OnInit {
-  constructor() {}
+  layout: any = {
+    pages: [
+      {
+        title: "Linguagens de Programação",
+        id: "page001",
+      },
+    ],
+  };
 
+  constructor() {}
   ngOnInit(): void {}
 }
