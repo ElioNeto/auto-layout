@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-orchestrator",
@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./orchestrator.component.css"],
 })
 export class OrchestratorComponent implements OnInit {
-  kind: string = "date";
+  @Input() items: any;
 
   constructor() {}
   ngOnInit(): void {}

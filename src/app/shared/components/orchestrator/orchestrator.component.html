@@ -1,11 +1,14 @@
-<div class="orchestrator">
-  <div *ngIf="kind === 'text'">
-    <p>text</p>
+<div class="orchestrator" *ngFor="let item of items">
+  <div *ngIf="item.kind === 'text'">
+    <div class="text-container" [id]="item.id">
+      <span>{{ item.label }}</span>
+      <span>{{ item.value }}</span>
+    </div>
   </div>
-  <div *ngIf="kind === 'date'">
+  <div *ngIf="item.kind === 'date'">
     <p>date</p>
   </div>
-  <div *ngIf="kind === 'currency'">
+  <div *ngIf="item.kind === 'currency'">
     <p>currency</p>
   </div>
 </div>
