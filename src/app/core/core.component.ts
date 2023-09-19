@@ -46,8 +46,8 @@ export class CoreComponent implements OnInit {
                 metadado: null,
               },
               {
-                id: "Ruby",
-                label: "C",
+                id: "content005",
+                label: "Ruby",
                 value: "interpretada",
                 kind: "text",
                 metadado: null,

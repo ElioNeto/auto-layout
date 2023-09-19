@@ -1,0 +1,14 @@
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.text-container > span:first-child {
+  font-weight: 900;
+  font-size: 14pt;
+}
+.text-container > span:nth-child(2) {
+  font-weight: 100;
+  color: #cececf;
+  font-size: 12pt;
+}

@@ -1,3 +1,5 @@
-<h2>{{ section.title }}</h2>
-<h3 *ngIf="section.subtitle">{{ section.subtitle }}</h3>
-<app-orchestrator [items]="section.items"></app-orchestrator>
+<div class="section">
+  <h2>{{ section.title }}</h2>
+  <h3 *ngIf="section.subtitle">{{ section.subtitle }}</h3>
+  <app-orchestrator [items]="section.items"></app-orchestrator>
+</div>
