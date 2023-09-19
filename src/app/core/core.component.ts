@@ -136,6 +136,21 @@ export class CoreComponent implements OnInit {
     ],
   };
 
+  currentPage: number = 1;
+  totalPages: number = this.layout.pages.length;
   constructor() {}
   ngOnInit(): void {}
+
+  toNextPage(): void {
+    if (this.currentPage < this.totalPages) {
+      this.currentPage++;
+    }
+  }
+  toPreviousPage(): void {
+    console.log("teste");
+
+    if (this.currentPage > 1) {
+      this.currentPage--;
+    }
+  }
 }
