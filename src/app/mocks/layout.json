@@ -1,0 +1,72 @@
+{
+  "pages": [
+    {
+      "id": "p-001",
+      "title": "titulo 01",
+      "sections": [
+        {
+          "id": "s-001",
+          "title": "seção 01",
+          "description": "descrição da seção",
+          "itens": [
+            {
+              "kind": "text",
+              "label": "nome",
+              "value": "{customer.personal.name}",
+              "subtext": "nome completo",
+              "metadado": {}
+            },
+            {
+              "kind": "currency",
+              "label": "preço",
+              "value": "{product.monetary.price}",
+              "subtext": "",
+              "metadado": {}
+            }
+          ]
+        },
+        {
+          "id": "s-002",
+          "title": "seção 02",
+          "description": "outra seção",
+          "itens": [
+            {
+              "kind": "date",
+              "label": "Última atualização",
+              "value": "{product.update.last}",
+              "subtext": "",
+              "metadado": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p-002",
+      "title": "titulo 02",
+      "sections": [
+        {
+          "id": "s-003",
+          "title": "seção 03",
+          "description": "nova seção",
+          "itens": [
+            {
+              "kind": "text",
+              "label": "outro nome",
+              "value": "{customer.personal.anotherName}",
+              "subtext": "nome alternativo",
+              "metadado": {}
+            },
+            {
+              "kind": "currency",
+              "label": "preço alternativo",
+              "value": "{product.monetary.anotherPrice}",
+              "subtext": "",
+              "metadado": {}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
