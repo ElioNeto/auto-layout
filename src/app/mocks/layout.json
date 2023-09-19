@@ -8,7 +8,7 @@
           "id": "s-001",
           "title": "seção 01",
           "description": "descrição da seção",
-          "itens": [
+          "items": [
             {
               "kind": "text",
               "label": "nome",
@@ -29,7 +29,7 @@
           "id": "s-002",
           "title": "seção 02",
           "description": "outra seção",
-          "itens": [
+          "items": [
             {
               "kind": "date",
               "label": "Última atualização",
@@ -49,7 +49,7 @@
           "id": "s-003",
           "title": "seção 03",
           "description": "nova seção",
-          "itens": [
+          "items": [
             {
               "kind": "text",
               "label": "outro nome",
