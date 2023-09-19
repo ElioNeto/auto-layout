@@ -28,16 +28,13 @@ export class OrchestratorComponent implements OnInit {
         obj.subtext = item.subtext;
         obj.metadado = item.metadado;
 
-        switch (item.metadado.kind) {
-          case "timestamp":
-            var date = new Date(item.value);
-            var d = this.sanitizeDateNumber(date.getDate());
-            var m = this.sanitizeDateNumber(date.getMonth() + 1);
-            var y = date.getFullYear();
-            var newDate = `${d}/${m}/${y}`;
-            obj.value = newDate;
-            break;
-        }
+        var date = new Date(item.value);
+        var d = this.sanitizeDateNumber(date.getDate());
+        var m = this.sanitizeDateNumber(date.getMonth() + 1);
+        var y = date.getFullYear();
+        var newDate = `${d}/${m}/${y}`;
+        obj.value = newDate;
+
         aux.push(obj);
       }
     });

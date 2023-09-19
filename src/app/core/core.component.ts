@@ -160,6 +160,16 @@ export class CoreComponent implements OnInit {
                   kind: "timestamp",
                 },
               },
+              {
+                id: "content016",
+                kind: "date",
+                label: "Última versão",
+                value: "2023-03-21T03:00:00.000Z",
+                subtext: null,
+                metadado: {
+                  kind: "iso",
+                },
+              },
             ],
           },
         ],
