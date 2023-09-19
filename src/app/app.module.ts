@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CoreComponent } from './core/core.component';
 import { PageComponent } from './shared/components/page/page.component';
 import { SectionComponent } from './shared/components/section/section.component';
+import { OrchestratorComponent } from './shared/components/orchestrator/orchestrator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoreComponent,
     PageComponent,
-    SectionComponent
+    SectionComponent,
+    OrchestratorComponent
   ],
   imports: [
     BrowserModule,
