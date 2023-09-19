@@ -1,7 +1,8 @@
 <div class="container">
-  <div class="page" *ngFor="let page of layout.pages">
-    <app-page [page]="page" [id]="page.id"></app-page>
-  </div>
+  <app-page
+    [page]="layout.pages[currentPage - 1]"
+    [id]="layout.pages[currentPage - 1].id"
+  ></app-page>
   <div class="actions">
     <button (click)="toPreviousPage()" [disabled]="currentPage === 1">
       voltar

@@ -133,10 +133,21 @@ export class CoreComponent implements OnInit {
           },
         ],
       },
+      {
+        title: "Detalhes",
+        id: "page002",
+        sections: [
+          {
+            id: "section004",
+            title: "Java",
+            description: "nullPointerException",
+          },
+        ],
+      },
     ],
   };
 
-  currentPage: number = 1;
+  currentPage: number = 2;
   totalPages: number = this.layout.pages.length;
   constructor() {}
   ngOnInit(): void {}
