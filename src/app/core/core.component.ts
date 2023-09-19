@@ -177,7 +177,7 @@ export class CoreComponent implements OnInit {
     ],
   };
 
-  currentPage: number = 2;
+  currentPage: number = 1;
   totalPages: number = this.layout.pages.length;
   constructor() {}
   ngOnInit(): void {}
