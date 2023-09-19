@@ -1,1 +1,11 @@
-<p>orchestrator works!</p>
+<div class="orchestrator">
+  <div *ngIf="kind === 'text'">
+    <p>text</p>
+  </div>
+  <div *ngIf="kind === 'date'">
+    <p>date</p>
+  </div>
+  <div *ngIf="kind === 'currency'">
+    <p>currency</p>
+  </div>
+</div>

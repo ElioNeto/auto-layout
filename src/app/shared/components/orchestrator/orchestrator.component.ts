@@ -6,7 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./orchestrator.component.css"],
 })
 export class OrchestratorComponent implements OnInit {
-  constructor() {}
+  kind: string = "date";
 
+  constructor() {}
   ngOnInit(): void {}
 }
