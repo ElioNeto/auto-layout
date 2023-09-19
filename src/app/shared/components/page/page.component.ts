@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./page.component.css"],
 })
 export class PageComponent implements OnInit {
-  @Input() layout: any;
+  @Input() page: any;
 
   constructor() {}
   ngOnInit(): void {}

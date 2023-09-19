@@ -1,3 +1,3 @@
-<div class="container">
-  <app-page [layout]="layout" [id]="layout.pages[0].id"></app-page>
+<div class="container" *ngFor="let page of layout.pages">
+  <app-page [page]="page" [id]="page.id"></app-page>
 </div>
