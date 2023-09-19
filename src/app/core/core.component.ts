@@ -147,8 +147,6 @@ export class CoreComponent implements OnInit {
     }
   }
   toPreviousPage(): void {
-    console.log("teste");
-
     if (this.currentPage > 1) {
       this.currentPage--;
     }
