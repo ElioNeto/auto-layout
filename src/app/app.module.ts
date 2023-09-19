@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreComponent } from './core/core.component';
 import { PageComponent } from './shared/components/page/page.component';
+import { SectionComponent } from './shared/components/section/section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoreComponent,
-    PageComponent
+    PageComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
