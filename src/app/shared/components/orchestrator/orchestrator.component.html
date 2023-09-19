@@ -7,7 +7,11 @@
     </div>
   </div>
   <div *ngIf="item.kind === 'date'">
-    <p>date</p>
+    <div class="text-container" [id]="item.id">
+      <span>{{ item.label }}</span>
+      <span>{{ item.value }}</span>
+      <span *ngIf="item.subtext">{{ item.subtext }}</span>
+    </div>
   </div>
   <div *ngIf="item.kind === 'currency'">
     <p>currency</p>

@@ -141,6 +141,26 @@ export class CoreComponent implements OnInit {
             id: "section004",
             title: "Java",
             description: "nullPointerException",
+            items: [
+              {
+                id: "content014",
+                kind: "text",
+                label: "Criador",
+                value: "James Gosling",
+                subtext: null,
+                metadado: null,
+              },
+              {
+                id: "content015",
+                kind: "date",
+                label: "Publicado pela primeira vez em",
+                value: 820461600000,
+                subtext: null,
+                metadado: {
+                  kind: "timestamp",
+                },
+              },
+            ],
           },
         ],
       },
