@@ -35,7 +35,7 @@
           "items": ["c007", "c008", "c009", "c010", "c011", "c012", "c013"]
         },
         {
-          "id": "s004",
+          "id": "s4",
           "title": "Java",
           "description": "nullPointerException",
           "items": ["c014", "c015", "c016"]
