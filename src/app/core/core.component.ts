@@ -7,26 +7,28 @@ import { CoreService } from "../shared/services/core.service";
   styleUrls: ["./core.component.css"],
 })
 export class CoreComponent implements OnInit {
-  layout: any = {};
+  layout: any;
 
   currentPage: number = 1;
-  totalPages: number = 2; //this.layout.pages.length;
+  totalPages: number | undefined; //this.layout.pages.length;
 
-  usemock: boolean = false;
+  usemock: boolean = true;
 
   constructor(private core: CoreService) {}
   ngOnInit(): void {
     if (!this.usemock) {
       this.core.getData().subscribe((data: any) => {
+        this.layout = {};
         this.layout.pages = data;
         this.totalPages = this.layout.pages.length;
       });
     } else {
+      this.totalPages = 1;
     }
   }
 
   toNextPage(): void {
-    if (this.currentPage < this.totalPages) {
+    if (this.currentPage < this.totalPages!) {
       this.currentPage++;
     }
   }
