@@ -8,11 +8,15 @@ import { CoreService } from "../shared/services/core.service";
 })
 export class CoreComponent implements OnInit {
   layout: any;
+  data: any;
+  objParsed: any;
 
   currentPage: number = 1;
   totalPages: number | undefined;
 
   usemock: boolean = false;
+
+  userId: string = "user00001";
 
   constructor(private core: CoreService) {}
   ngOnInit(): void {
@@ -25,7 +29,7 @@ export class CoreComponent implements OnInit {
 
           this.totalPages = this.layout.pages.length;
         });
-      }, 1500);
+      }, 500);
     } else {
       this.totalPages = 1;
     }
