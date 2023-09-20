@@ -7,6 +7,9 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class PageComponent implements OnInit {
   @Input() page: any;
+  @Input() data: any;
+  @Input() sections: any;
+  @Input() contents: any;
 
   constructor() {}
   ngOnInit(): void {}

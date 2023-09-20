@@ -6,7 +6,11 @@ import { Component, Input, OnInit } from "@angular/core";
   styleUrls: ["./section.component.css"],
 })
 export class SectionComponent implements OnInit {
-  @Input() section: any;
+  @Input() sections: any;
+  @Input() contents: any;
+  @Input() data: any;
+  @Input() sectionsInPage: any;
+
   constructor() {}
   ngOnInit(): void {}
 }

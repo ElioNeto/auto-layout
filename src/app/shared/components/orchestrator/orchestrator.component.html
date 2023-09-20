@@ -1,19 +1,23 @@
-<div class="orchestrator" *ngFor="let item of items">
-  <div *ngIf="item.kind === 'text'">
-    <div class="text-container" [id]="item.id">
-      <span>{{ item.label }}</span>
-      <span>{{ item.value }}</span>
-      <span *ngIf="item.subtext">{{ item.subtext }}</span>
+<div *ngFor="let IIS of itemsInSection">
+  <div class="orchestrator" *ngFor="let item of items">
+    <div *ngIf="IIS === item.id" [id]="item.id">
+      <div *ngIf="item.kind === 'text'">
+        <div class="text-container">
+          <span>{{ item.label }}</span>
+          <span>{{ item.value }}</span>
+          <span *ngIf="item.subtext">{{ item.subtext }}</span>
+        </div>
+      </div>
+      <div *ngIf="item.kind === 'date'">
+        <div class="text-container">
+          <span>{{ item.label }}</span>
+          <span>{{ item.value }}</span>
+          <span *ngIf="item.subtext">{{ item.subtext }}</span>
+        </div>
+      </div>
+      <div *ngIf="item.kind === 'currency'">
+        <p>currency</p>
+      </div>
     </div>
-  </div>
-  <div *ngIf="item.kind === 'date'">
-    <div class="text-container" [id]="item.id">
-      <span>{{ item.label }}</span>
-      <span>{{ item.value }}</span>
-      <span *ngIf="item.subtext">{{ item.subtext }}</span>
-    </div>
-  </div>
-  <div *ngIf="item.kind === 'currency'">
-    <p>currency</p>
   </div>
 </div>

@@ -1,5 +1,13 @@
-<div class="section">
-  <h2>{{ section.title }}</h2>
-  <h3 *ngIf="section.description">{{ section.description }}</h3>
-  <app-orchestrator [items]="section.items"></app-orchestrator>
+<div *ngFor="let SIP of sectionsInPage">
+  <div *ngFor="let section of sections">
+    <div class="section" *ngIf="SIP === section.id" [id]="SIP">
+      <h2>{{ section.title }}</h2>
+      <h3 *ngIf="section.description">{{ section.description }}</h3>
+      <app-orchestrator
+        [items]="contents"
+        [itemsInSection]="section.items"
+        [data]="data"
+      ></app-orchestrator>
+    </div>
+  </div>
 </div>

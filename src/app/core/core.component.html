@@ -12,6 +12,9 @@
   <div *ngIf="layout">
     <app-page
       [page]="layout.pages[currentPage - 1]"
+      [data]="data"
+      [contents]="layout.contents"
+      [sections]="layout.sections"
       [id]="layout.pages[currentPage - 1].id"
     ></app-page>
     <div class="actions">

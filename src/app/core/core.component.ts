@@ -9,7 +9,6 @@ import { CoreService } from "../shared/services/core.service";
 export class CoreComponent implements OnInit {
   layout: any;
   data: any;
-  objParsed: any;
 
   currentPage: number = 1;
   totalPages: number | undefined;

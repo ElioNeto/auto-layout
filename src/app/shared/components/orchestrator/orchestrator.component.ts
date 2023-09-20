@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from "@angular/core";
 })
 export class OrchestratorComponent implements OnInit {
   @Input() items: any;
+  @Input() itemsInSection: any;
+  @Input() data: any;
 
   constructor() {}
   ngOnInit(): void {
