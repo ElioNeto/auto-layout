@@ -12,12 +12,12 @@ export class OrchestratorComponent implements OnInit {
 
   constructor() {}
   ngOnInit(): void {
+    //console.log(this.data);
     this.changeValues();
   }
 
   changeValues() {
     let aux: any = [];
-
     this.items.map((item: any) => {
       if (item.kind === "text") {
         aux.push(item);

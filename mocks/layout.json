@@ -44,99 +44,105 @@
       "contents": [
         {
           "id": "c001",
-          "label": "{language.[0].name}",
-          "value": "{language.[0].type}",
+          "label": "{language.0.name}",
+          "value": "{language.0.kind}",
+          "subtext": null,
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c002",
-          "label": "{language.[1].name}",
-          "value": "{language.[1].type}",
+          "label": "{language.1.name}",
+          "value": "{language.1.kind}",
+          "subtext": null,
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c003",
-          "label": "{language.[2].name}",
-          "value": "{language.[2].type}",
+          "label": "{language.2.name}",
+          "value": "{language.2.kind}",
+          "subtext": null,
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c004",
-          "label": "{language.[3].name}",
-          "value": "{language.[3].type}",
+          "label": "{language.3.name}",
+          "value": "{language.3.kind}",
+          "subtext": null,
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c005",
-          "label": "{language.[4].name}",
-          "value": "{language.[4].type}",
+          "label": "{language.4.name}",
+          "value": "{language.4.kind}",
+          "subtext": null,
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c006",
-          "label": "{language.[5].name}",
-          "value": "{language.[5].type}",
+          "label": "{language.5.name}",
+          "value": "{language.5.kind}",
+          "subtext": null,
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c007",
-          "label": "{language.[3].framework[0].name}",
-          "value": "{language.[3].name}",
-          "subtext": "{language.[3].framework[0].kind}",
+          "label": "{language.3.framework.0.name}",
+          "value": "{language.3.name}",
+          "subtext": "{language.3.framework.0.kind}",
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c008",
-          "label": "{language.[3].framework[1].name}",
-          "value": "{language.[3].name}",
-          "subtext": "{language.[3].framework[1].kind}",
+          "label": "{language.3.framework.1.name}",
+          "value": "{language.3.name}",
+          "subtext": "{language.3.framework.1.kind}",
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c009",
-          "label": "{language.[3].framework[2].name}",
-          "value": "{language.[3].name}",
-          "subtext": "{language.[3].framework[2].kind}",
+          "label": "{language.3.framework.2.name}",
+          "value": "{language.3.name}",
+          "subtext": "{language.3.framework.2.kind}",
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c010",
-          "label": "{language.[3].framework[3].name}",
-          "value": "{language.[3].name}",
-          "subtext": "{language.[3].framework[3].kind}",
+          "label": "{language.3.framework.3.name}",
+          "value": "{language.3.name}",
+          "subtext": "{language.3.framework.3.kind}",
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c011",
-          "label": "{language.[4].framework[0].name}",
-          "value": "{language.[4].name}",
-          "subtext": "{language.[4].framework[0].kind}",
+          "label": "{language.4.framework.0.name}",
+          "value": "{language.4.name}",
+          "subtext": "{language.4.framework.0.kind}",
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c012",
-          "label": "{language.[5].framework[0].name}",
-          "value": "{language.[5].name}",
-          "subtext": "{language.[5].framework[0].kind}",
+          "label": "{language.5.framework.0.name}",
+          "value": "{language.5.name}",
+          "subtext": "{language.5.framework.0.kind}",
           "kind": "text",
           "metadado": null
         },
         {
           "id": "c013",
-          "label": "{language.[3].framework[3].name}",
-          "value": "{language.[3].name}",
-          "subtext": "{language.[3].framework[3].kind}",
+          "label": "{language.3.framework.3.name}",
+          "value": "{language.3.name}",
+          "subtext": "{language.3.framework.3.kind}",
           "kind": "text",
           "metadado": null
         },
@@ -144,7 +150,7 @@
           "id": "c014",
           "kind": "text",
           "label": "Criador",
-          "value": "{language.[0].creator}",
+          "value": "{language.0.creator}",
           "subtext": null,
           "metadado": null
         },
@@ -152,7 +158,7 @@
           "id": "c015",
           "kind": "date",
           "label": "Publicado pela primeira vez em",
-          "value": "{language.[0].firstVersion}",
+          "value": "{language.0.firstVersion}",
           "subtext": null,
           "metadado": {
             "kind": "timestamp"
@@ -162,7 +168,7 @@
           "id": "c016",
           "kind": "date",
           "label": "Última versão",
-          "value": "{language.[0].lastVersion}",
+          "value": "{language.0.lastVersion}",
           "subtext": null,
           "metadado": {
             "kind": "iso"
@@ -179,7 +185,7 @@
         {
           "name": "Java",
           "kind": "compilada",
-          "frameworks": [
+          "framework": [
             {
               "name": "Springboot",
               "kind": "framework"
@@ -192,7 +198,7 @@
         {
           "name": "C",
           "kind": "compilada",
-          "frameworks": null,
+          "framework": null,
           "creator": null,
           "firstVersion": null,
           "lastVersion": null
@@ -200,7 +206,7 @@
         {
           "name": "Rust",
           "kind": "compilada",
-          "frameworks": null,
+          "framework": null,
           "creator": null,
           "firstVersion": null,
           "lastVersion": null
@@ -208,7 +214,7 @@
         {
           "name": "JavaScript",
           "kind": "interpretada",
-          "frameworks": [
+          "framework": [
             {
               "name": "Angular",
               "kind": "framework"
@@ -233,7 +239,7 @@
         {
           "name": "Ruby",
           "kind": "interpretada",
-          "frameworks": [
+          "framework": [
             {
               "name": "Rails",
               "kind": "framework"
@@ -246,7 +252,7 @@
         {
           "name": "Python",
           "kind": "interpretada",
-          "frameworks": [
+          "framework": [
             {
               "name": "Jango",
               "kind": "framework"
