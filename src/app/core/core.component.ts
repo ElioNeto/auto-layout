@@ -10,18 +10,20 @@ export class CoreComponent implements OnInit {
   layout: any;
 
   currentPage: number = 1;
-  totalPages: number | undefined; //this.layout.pages.length;
+  totalPages: number | undefined;
 
-  usemock: boolean = true;
+  usemock: boolean = false;
 
   constructor(private core: CoreService) {}
   ngOnInit(): void {
     if (!this.usemock) {
-      this.core.getData().subscribe((data: any) => {
-        this.layout = {};
-        this.layout.pages = data;
-        this.totalPages = this.layout.pages.length;
-      });
+      setTimeout(() => {
+        this.core.getData().subscribe((data: any) => {
+          this.layout = {};
+          this.layout.pages = data;
+          this.totalPages = this.layout.pages.length;
+        });
+      }, 1500);
     } else {
       this.totalPages = 1;
     }

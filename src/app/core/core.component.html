@@ -1,14 +1,26 @@
-<div class="container" *ngIf="layout">
-  <app-page
-    [page]="layout.pages[currentPage - 1]"
-    [id]="layout.pages[currentPage - 1].id"
-  ></app-page>
-  <div class="actions">
-    <button (click)="toPreviousPage()" [disabled]="currentPage === 1">
-      voltar
-    </button>
-    <button (click)="toNextPage()" [disabled]="currentPage === totalPages">
-      próximo
-    </button>
+<div class="container">
+  <div class="loader" *ngIf="!layout">
+    <div class="loader-cube">
+      <div class="l-square">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="layout">
+    <app-page
+      [page]="layout.pages[currentPage - 1]"
+      [id]="layout.pages[currentPage - 1].id"
+    ></app-page>
+    <div class="actions">
+      <button (click)="toPreviousPage()" [disabled]="currentPage === 1">
+        voltar
+      </button>
+      <button (click)="toNextPage()" [disabled]="currentPage === totalPages">
+        próximo
+      </button>
+    </div>
   </div>
 </div>
