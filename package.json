@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "mock": "json-server --watch mocks/layout.json"
   },
   "private": true,
   "dependencies": {

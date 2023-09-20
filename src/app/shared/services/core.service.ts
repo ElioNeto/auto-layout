@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 
-import data from "../../mocks/layout.json";
+import data from "../../../../mocks/layout.json";
 
 @Injectable({
   providedIn: "root",
