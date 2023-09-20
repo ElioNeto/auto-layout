@@ -7,187 +7,21 @@ import { CoreService } from "../shared/services/core.service";
   styleUrls: ["./core.component.css"],
 })
 export class CoreComponent implements OnInit {
-  layout: any = {
-    pages: [
-      {
-        title: "Linguagens de Programação",
-        id: "page001",
-        sections: [
-          {
-            id: "section001",
-            title: "Linguagens Core",
-            description: null,
-            items: [
-              {
-                id: "content001",
-                label: "Java",
-                value: "compilada",
-                kind: "text",
-                metadado: null,
-              },
-              {
-                id: "content002",
-                label: "C",
-                value: "compilada",
-                kind: "text",
-                metadado: null,
-              },
-              {
-                id: "content003",
-                label: "Rust",
-                value: "compilada",
-                kind: "text",
-                metadado: null,
-              },
-              {
-                id: "content004",
-                label: "Javascript",
-                value: "interpretada",
-                kind: "text",
-                metadado: null,
-              },
-              {
-                id: "content005",
-                label: "Ruby",
-                value: "interpretada",
-                kind: "text",
-                metadado: null,
-              },
-            ],
-          },
-          {
-            id: "section002",
-            title: "Linguagens Cola",
-            description: null,
-            items: [
-              {
-                id: "content006",
-                label: "Python",
-                value: "interpretada",
-                kind: "text",
-                metadado: null,
-              },
-            ],
-          },
-          {
-            id: "section003",
-            title: "Frameworks e Libs",
-            description: null,
-            items: [
-              {
-                id: "content007",
-                label: "React",
-                value: "JS",
-                subtext: "lib",
-                kind: "text",
-                metadado: null,
-              },
-              {
-                id: "content008",
-                label: "Angular",
-                value: "JS",
-                kind: "text",
-                subtext: "framework",
-                metadado: null,
-              },
-              {
-                id: "content009",
-                label: "VUE",
-                value: "JS",
-                kind: "text",
-                subtext: "framework",
-                metadado: null,
-              },
-              {
-                id: "content010",
-                label: "Springboot",
-                value: "Java",
-                kind: "text",
-                subtext: "framework",
-                metadado: null,
-              },
-              {
-                id: "content011",
-                label: "Rails",
-                value: "Ruby",
-                kind: "text",
-                subtext: "framework",
-                metadado: null,
-              },
-              {
-                id: "content012",
-                label: "Jango",
-                value: "Python",
-                kind: "text",
-                subtext: "framework",
-                metadado: null,
-              },
-              {
-                id: "content013",
-                label: "Node",
-                value: "JS",
-                kind: "text",
-                subtext: "framework",
-                metadado: null,
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Detalhes",
-        id: "page002",
-        sections: [
-          {
-            id: "section004",
-            title: "Java",
-            description: "nullPointerException",
-            items: [
-              {
-                id: "content014",
-                kind: "text",
-                label: "Criador",
-                value: "James Gosling",
-                subtext: null,
-                metadado: null,
-              },
-              {
-                id: "content015",
-                kind: "date",
-                label: "Publicado pela primeira vez em",
-                value: 820461600000,
-                subtext: null,
-                metadado: {
-                  kind: "timestamp",
-                },
-              },
-              {
-                id: "content016",
-                kind: "date",
-                label: "Última versão",
-                value: "2023-03-21T03:00:00.000Z",
-                subtext: null,
-                metadado: {
-                  kind: "iso",
-                },
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  };
+  layout: any = {};
 
   currentPage: number = 1;
-  totalPages: number = this.layout.pages.length;
+  totalPages: number = 2; //this.layout.pages.length;
 
-  usemock: boolean = true;
+  usemock: boolean = false;
 
   constructor(private core: CoreService) {}
   ngOnInit(): void {
-    if (this.usemock) {
-      this.layout = this.core.getData();
-      this.totalPages = this.layout.pages.length;
+    if (!this.usemock) {
+      this.core.getData().subscribe((data: any) => {
+        this.layout.pages = data;
+        this.totalPages = this.layout.pages.length;
+      });
+    } else {
     }
   }
 

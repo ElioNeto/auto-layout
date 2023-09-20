@@ -1,14 +1,18 @@
+import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
 
-import data from "../../../../mocks/layout.json";
+//import data from "../../../../mocks/layout.json";
 
 @Injectable({
   providedIn: "root",
 })
 export class CoreService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
-  getData() {
-    return data;
+  BASEURL: string = "http://localhost:3000/";
+
+  getData(): Observable<any> {
+    return this.http.get(`${this.BASEURL}pages`);
   }
 }

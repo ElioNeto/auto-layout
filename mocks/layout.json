@@ -1,68 +1,166 @@
 {
   "pages": [
     {
-      "id": "p-001",
-      "title": "titulo 01",
+      "title": "Linguagens de Programação",
+      "id": "page001",
       "sections": [
         {
-          "id": "s-001",
-          "title": "seção 01",
-          "description": "descrição da seção",
+          "id": "section001",
+          "title": "Linguagens Core",
+          "description": null,
           "items": [
             {
+              "id": "content001",
+              "label": "Java",
+              "value": "compilada",
               "kind": "text",
-              "label": "nome",
-              "value": "{customer.personal.name}",
-              "subtext": "nome completo",
-              "metadado": {}
+              "metadado": null
             },
             {
-              "kind": "currency",
-              "label": "preço",
-              "value": "{product.monetary.price}",
-              "subtext": "",
-              "metadado": {}
+              "id": "content002",
+              "label": "C",
+              "value": "compilada",
+              "kind": "text",
+              "metadado": null
+            },
+            {
+              "id": "content003",
+              "label": "Rust",
+              "value": "compilada",
+              "kind": "text",
+              "metadado": null
+            },
+            {
+              "id": "content004",
+              "label": "Javascript",
+              "value": "interpretada",
+              "kind": "text",
+              "metadado": null
+            },
+            {
+              "id": "content005",
+              "label": "Ruby",
+              "value": "interpretada",
+              "kind": "text",
+              "metadado": null
             }
           ]
         },
         {
-          "id": "s-002",
-          "title": "seção 02",
-          "description": "outra seção",
+          "id": "section002",
+          "title": "Linguagens Cola",
+          "description": null,
           "items": [
             {
-              "kind": "date",
-              "label": "Última atualização",
-              "value": "{product.update.last}",
-              "subtext": "",
-              "metadado": {}
+              "id": "content006",
+              "label": "Python",
+              "value": "interpretada",
+              "kind": "text",
+              "metadado": null
+            }
+          ]
+        },
+        {
+          "id": "section003",
+          "title": "Frameworks e Libs",
+          "description": null,
+          "items": [
+            {
+              "id": "content007",
+              "label": "React",
+              "value": "JS",
+              "subtext": "lib",
+              "kind": "text",
+              "metadado": null
+            },
+            {
+              "id": "content008",
+              "label": "Angular",
+              "value": "JS",
+              "kind": "text",
+              "subtext": "framework",
+              "metadado": null
+            },
+            {
+              "id": "content009",
+              "label": "VUE",
+              "value": "JS",
+              "kind": "text",
+              "subtext": "framework",
+              "metadado": null
+            },
+            {
+              "id": "content010",
+              "label": "Springboot",
+              "value": "Java",
+              "kind": "text",
+              "subtext": "framework",
+              "metadado": null
+            },
+            {
+              "id": "content011",
+              "label": "Rails",
+              "value": "Ruby",
+              "kind": "text",
+              "subtext": "framework",
+              "metadado": null
+            },
+            {
+              "id": "content012",
+              "label": "Jango",
+              "value": "Python",
+              "kind": "text",
+              "subtext": "framework",
+              "metadado": null
+            },
+            {
+              "id": "content013",
+              "label": "Node",
+              "value": "JS",
+              "kind": "text",
+              "subtext": "framework",
+              "metadado": null
             }
           ]
         }
       ]
     },
     {
-      "id": "p-002",
-      "title": "titulo 02",
+      "title": "Detalhes",
+      "id": "page002",
       "sections": [
         {
-          "id": "s-003",
-          "title": "seção 03",
-          "description": "nova seção",
+          "id": "section004",
+          "title": "Java",
+          "description": "nullPointerException",
           "items": [
             {
+              "id": "content014",
               "kind": "text",
-              "label": "outro nome",
-              "value": "{customer.personal.anotherName}",
-              "subtext": "nome alternativo",
-              "metadado": {}
+              "label": "Criador",
+              "value": "James Gosling",
+              "subtext": null,
+              "metadado": null
             },
             {
-              "kind": "currency",
-              "label": "preço alternativo",
-              "value": "{product.monetary.anotherPrice}",
-              "subtext": "",
-              "metadado": {}
+              "id": "content015",
+              "kind": "date",
+              "label": "Publicado pela primeira vez em",
+              "value": 820461600000,
+              "subtext": null,
+              "metadado": {
+                "kind": "timestamp"
+              }
+            },
+            {
+              "id": "content016",
+              "kind": "date",
+              "label": "Última versão",
+              "value": "2023-03-21T03:00:00.000Z",
+              "subtext": null,
+              "metadado": {
+                "kind": "iso"
+              }
             }
           ]
         }

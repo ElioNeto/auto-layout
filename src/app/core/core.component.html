@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="layout">
   <app-page
     [page]="layout.pages[currentPage - 1]"
     [id]="layout.pages[currentPage - 1].id"
