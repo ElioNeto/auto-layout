@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { CoreService } from "../shared/services/core.service";
 
 @Component({
   selector: "app-core",
@@ -179,8 +180,16 @@ export class CoreComponent implements OnInit {
 
   currentPage: number = 1;
   totalPages: number = this.layout.pages.length;
-  constructor() {}
-  ngOnInit(): void {}
+
+  usemock: boolean = true;
+
+  constructor(private core: CoreService) {}
+  ngOnInit(): void {
+    if (this.usemock) {
+      this.layout = this.core.getData();
+      this.totalPages = this.layout.pages.length;
+    }
+  }
 
   toNextPage(): void {
     if (this.currentPage < this.totalPages) {
