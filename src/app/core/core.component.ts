@@ -21,6 +21,8 @@ export class CoreComponent implements OnInit {
         this.core.getData().subscribe((data: any) => {
           this.layout = {};
           this.layout.pages = data;
+          console.log(data);
+
           this.totalPages = this.layout.pages.length;
         });
       }, 1500);

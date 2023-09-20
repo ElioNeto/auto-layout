@@ -13,6 +13,6 @@ export class CoreService {
   BASEURL: string = "http://localhost:3000/";
 
   getData(): Observable<any> {
-    return this.http.get(`${this.BASEURL}pages`);
+    return this.http.get(`${this.BASEURL}layout`);
   }
 }
