@@ -1,258 +1,262 @@
 {
-  "layout": {
-    "id": "layout0001",
-    "active": true,
-    "pages": [
-      {
-        "id": "p001",
-        "title": "Linguagens de Programação",
-        "items": ["s1", "s2", "s3"]
-      },
-      {
-        "id": "p002",
-        "title": "Detalhes",
-        "items": ["s4"]
-      }
-    ],
-    "sections": [
-      {
-        "id": "s1",
-        "title": "Linguagens Core",
-        "description": null,
-        "items": ["c001", "c002", "c003", "c004", "c005"]
-      },
-      {
-        "id": "s2",
-        "title": "Linguagens Cola",
-        "description": null,
-        "items": ["c006"]
-      },
-      {
-        "id": "s3",
-        "title": "Frameworks e Libs",
-        "description": null,
-        "items": ["c007", "c008", "c009", "c010", "c011", "c012", "c013"]
-      },
-      {
-        "id": "s004",
-        "title": "Java",
-        "description": "nullPointerException",
-        "items": ["c014", "c015", "c016"]
-      }
-    ],
-    "contents": [
-      {
-        "id": "c001",
-        "label": "{language.[0].name}",
-        "value": "{language.[0].type}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c002",
-        "label": "{language.[1].name}",
-        "value": "{language.[1].type}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c003",
-        "label": "{language.[2].name}",
-        "value": "{language.[2].type}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c004",
-        "label": "{language.[3].name}",
-        "value": "{language.[3].type}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c005",
-        "label": "{language.[4].name}",
-        "value": "{language.[4].type}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c006",
-        "label": "{language.[5].name}",
-        "value": "{language.[5].type}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c007",
-        "label": "{language.[3].framework[0].name}",
-        "value": "{language.[3].name}",
-        "subtext": "{language.[3].framework[0].kind}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c008",
-        "label": "{language.[3].framework[1].name}",
-        "value": "{language.[3].name}",
-        "subtext": "{language.[3].framework[1].kind}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c009",
-        "label": "{language.[3].framework[2].name}",
-        "value": "{language.[3].name}",
-        "subtext": "{language.[3].framework[2].kind}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c010",
-        "label": "{language.[3].framework[3].name}",
-        "value": "{language.[3].name}",
-        "subtext": "{language.[3].framework[3].kind}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c011",
-        "label": "{language.[4].framework[0].name}",
-        "value": "{language.[4].name}",
-        "subtext": "{language.[4].framework[0].kind}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c012",
-        "label": "{language.[5].framework[0].name}",
-        "value": "{language.[5].name}",
-        "subtext": "{language.[5].framework[0].kind}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c013",
-        "label": "{language.[3].framework[3].name}",
-        "value": "{language.[3].name}",
-        "subtext": "{language.[3].framework[3].kind}",
-        "kind": "text",
-        "metadado": null
-      },
-      {
-        "id": "c014",
-        "kind": "text",
-        "label": "Criador",
-        "value": "{language.[0].creator}",
-        "subtext": null,
-        "metadado": null
-      },
-      {
-        "id": "c015",
-        "kind": "date",
-        "label": "Publicado pela primeira vez em",
-        "value": "{language.[0].firstVersion}",
-        "subtext": null,
-        "metadado": {
-          "kind": "timestamp"
+  "layout": [
+    {
+      "id": "layout0001",
+      "active": true,
+      "pages": [
+        {
+          "id": "p001",
+          "title": "Linguagens de Programação",
+          "items": ["s1", "s2", "s3"]
+        },
+        {
+          "id": "p002",
+          "title": "Detalhes",
+          "items": ["s4"]
         }
-      },
-      {
-        "id": "c016",
-        "kind": "date",
-        "label": "Última versão",
-        "value": "{language.[0].lastVersion}",
-        "subtext": null,
-        "metadado": {
-          "kind": "iso"
+      ],
+      "sections": [
+        {
+          "id": "s1",
+          "title": "Linguagens Core",
+          "description": null,
+          "items": ["c001", "c002", "c003", "c004", "c005"]
+        },
+        {
+          "id": "s2",
+          "title": "Linguagens Cola",
+          "description": null,
+          "items": ["c006"]
+        },
+        {
+          "id": "s3",
+          "title": "Frameworks e Libs",
+          "description": null,
+          "items": ["c007", "c008", "c009", "c010", "c011", "c012", "c013"]
+        },
+        {
+          "id": "s004",
+          "title": "Java",
+          "description": "nullPointerException",
+          "items": ["c014", "c015", "c016"]
         }
-      }
-    ]
-  },
-  "data": {
-    "id": "user00001",
-    "layoutId": "layout0001",
-    "language": [
-      {
-        "name": "Java",
-        "kind": "compilada",
-        "frameworks": [
-          {
-            "name": "Springboot",
-            "kind": "framework"
+      ],
+      "contents": [
+        {
+          "id": "c001",
+          "label": "{language.[0].name}",
+          "value": "{language.[0].type}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c002",
+          "label": "{language.[1].name}",
+          "value": "{language.[1].type}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c003",
+          "label": "{language.[2].name}",
+          "value": "{language.[2].type}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c004",
+          "label": "{language.[3].name}",
+          "value": "{language.[3].type}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c005",
+          "label": "{language.[4].name}",
+          "value": "{language.[4].type}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c006",
+          "label": "{language.[5].name}",
+          "value": "{language.[5].type}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c007",
+          "label": "{language.[3].framework[0].name}",
+          "value": "{language.[3].name}",
+          "subtext": "{language.[3].framework[0].kind}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c008",
+          "label": "{language.[3].framework[1].name}",
+          "value": "{language.[3].name}",
+          "subtext": "{language.[3].framework[1].kind}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c009",
+          "label": "{language.[3].framework[2].name}",
+          "value": "{language.[3].name}",
+          "subtext": "{language.[3].framework[2].kind}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c010",
+          "label": "{language.[3].framework[3].name}",
+          "value": "{language.[3].name}",
+          "subtext": "{language.[3].framework[3].kind}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c011",
+          "label": "{language.[4].framework[0].name}",
+          "value": "{language.[4].name}",
+          "subtext": "{language.[4].framework[0].kind}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c012",
+          "label": "{language.[5].framework[0].name}",
+          "value": "{language.[5].name}",
+          "subtext": "{language.[5].framework[0].kind}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c013",
+          "label": "{language.[3].framework[3].name}",
+          "value": "{language.[3].name}",
+          "subtext": "{language.[3].framework[3].kind}",
+          "kind": "text",
+          "metadado": null
+        },
+        {
+          "id": "c014",
+          "kind": "text",
+          "label": "Criador",
+          "value": "{language.[0].creator}",
+          "subtext": null,
+          "metadado": null
+        },
+        {
+          "id": "c015",
+          "kind": "date",
+          "label": "Publicado pela primeira vez em",
+          "value": "{language.[0].firstVersion}",
+          "subtext": null,
+          "metadado": {
+            "kind": "timestamp"
           }
-        ],
-        "creator": "James Gosling",
-        "firstVersion": 820461600000,
-        "lastVersion": "2023-03-21T03:00:00.000Z"
-      },
-      {
-        "name": "C",
-        "kind": "compilada",
-        "frameworks": null,
-        "creator": null,
-        "firstVersion": null,
-        "lastVersion": null
-      },
-      {
-        "name": "Rust",
-        "kind": "compilada",
-        "frameworks": null,
-        "creator": null,
-        "firstVersion": null,
-        "lastVersion": null
-      },
-      {
-        "name": "JavaScript",
-        "kind": "interpretada",
-        "frameworks": [
-          {
-            "name": "Angular",
-            "kind": "framework"
-          },
-          {
-            "name": "Vue",
-            "kind": "framework"
-          },
-          {
-            "name": "React",
-            "kind": "lib"
-          },
-          {
-            "name": "Node",
-            "kind": "framework"
+        },
+        {
+          "id": "c016",
+          "kind": "date",
+          "label": "Última versão",
+          "value": "{language.[0].lastVersion}",
+          "subtext": null,
+          "metadado": {
+            "kind": "iso"
           }
-        ],
-        "creator": null,
-        "firstVersion": null,
-        "lastVersion": null
-      },
-      {
-        "name": "Ruby",
-        "kind": "interpretada",
-        "frameworks": [
-          {
-            "name": "Rails",
-            "kind": "framework"
-          }
-        ],
-        "creator": null,
-        "firstVersion": null,
-        "lastVersion": null
-      },
-      {
-        "name": "Python",
-        "kind": "interpretada",
-        "frameworks": [
-          {
-            "name": "Jango",
-            "kind": "framework"
-          }
-        ],
-        "creator": null,
-        "firstVersion": null,
-        "lastVersion": null
-      }
-    ]
-  }
+        }
+      ]
+    }
+  ],
+  "data": [
+    {
+      "id": "user00001",
+      "layoutId": "layout0001",
+      "language": [
+        {
+          "name": "Java",
+          "kind": "compilada",
+          "frameworks": [
+            {
+              "name": "Springboot",
+              "kind": "framework"
+            }
+          ],
+          "creator": "James Gosling",
+          "firstVersion": 820461600000,
+          "lastVersion": "2023-03-21T03:00:00.000Z"
+        },
+        {
+          "name": "C",
+          "kind": "compilada",
+          "frameworks": null,
+          "creator": null,
+          "firstVersion": null,
+          "lastVersion": null
+        },
+        {
+          "name": "Rust",
+          "kind": "compilada",
+          "frameworks": null,
+          "creator": null,
+          "firstVersion": null,
+          "lastVersion": null
+        },
+        {
+          "name": "JavaScript",
+          "kind": "interpretada",
+          "frameworks": [
+            {
+              "name": "Angular",
+              "kind": "framework"
+            },
+            {
+              "name": "Vue",
+              "kind": "framework"
+            },
+            {
+              "name": "React",
+              "kind": "lib"
+            },
+            {
+              "name": "Node",
+              "kind": "framework"
+            }
+          ],
+          "creator": null,
+          "firstVersion": null,
+          "lastVersion": null
+        },
+        {
+          "name": "Ruby",
+          "kind": "interpretada",
+          "frameworks": [
+            {
+              "name": "Rails",
+              "kind": "framework"
+            }
+          ],
+          "creator": null,
+          "firstVersion": null,
+          "lastVersion": null
+        },
+        {
+          "name": "Python",
+          "kind": "interpretada",
+          "frameworks": [
+            {
+              "name": "Jango",
+              "kind": "framework"
+            }
+          ],
+          "creator": null,
+          "firstVersion": null,
+          "lastVersion": null
+        }
+      ]
+    }
+  ]
 }

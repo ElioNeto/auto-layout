@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
+import { Observable, catchError, throwError } from "rxjs";
 
 //import data from "../../../../mocks/layout.json";
 
@@ -12,7 +12,27 @@ export class CoreService {
 
   BASEURL: string = "http://localhost:3000/";
 
-  getData(): Observable<any> {
-    return this.http.get(`${this.BASEURL}layout`);
+  getData(id: string): Observable<any> {
+    const url = `${this.BASEURL}data/${id}`;
+    return this.http.get(url).pipe(
+      catchError((error: any) => {
+        if (error.status === 404) {
+          return throwError("ID not found!");
+        }
+        return throwError("unknown error");
+      })
+    );
+  }
+
+  getLayout(id: string): Observable<any> {
+    const url = `${this.BASEURL}layout/${id}`;
+    return this.http.get(url).pipe(
+      catchError((error: any) => {
+        if (error.status === 404) {
+          return throwError("ID not found!");
+        }
+        return throwError("unknown error");
+      })
+    );
   }
 }

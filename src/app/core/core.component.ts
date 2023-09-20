@@ -22,12 +22,12 @@ export class CoreComponent implements OnInit {
   ngOnInit(): void {
     if (!this.usemock) {
       setTimeout(() => {
-        this.core.getData().subscribe((data: any) => {
-          this.layout = {};
-          this.layout.pages = data;
-          console.log(data);
-
-          this.totalPages = this.layout.pages.length;
+        this.core.getData(this.userId).subscribe((data: any) => {
+          this.data = data;
+          this.core.getLayout(this.data.layoutId).subscribe((layout: any) => {
+            this.layout = layout;
+            this.totalPages = this.layout.pages.length;
+          });
         });
       }, 500);
     } else {
