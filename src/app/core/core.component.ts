@@ -15,7 +15,7 @@ export class CoreComponent implements OnInit {
 
   usemock: boolean = false;
 
-  userId: string = "user00001";
+  userId: string = "user00002";
 
   constructor(private core: CoreService) {}
   ngOnInit(): void {
