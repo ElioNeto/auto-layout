@@ -61,6 +61,12 @@ export class CoreComponent implements OnInit {
         item.subtext = this.dataSeeker(this.data, txt);
       }
     });
+    this.layout.sections.map((item: any) => {
+      if (item.title?.startsWith("{")) {
+        let txt = item.title.replace(regex, "");
+        item.title = this.dataSeeker(this.data, txt);
+      }
+    });
   }
   dataSeeker(data: any, path: any): any {
     if (typeof path == "string") {

@@ -189,9 +189,9 @@
       "sections": [
         {
           "id": "s1",
-          "title": "Elixirs",
+          "title": "{elixires.0.name}",
           "description": null,
-          "items": ["c001", "c002", "c003", "c004"]
+          "items": ["c002", "c003", "c004"]
         }
       ],
       "contents": [
